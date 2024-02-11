@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"></meta>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+	<title>DOCUMENT</title>
+	<link rel="stylesheet" href="numberSys.css"></link>
+</head>
+<body>
+	<div class = "webItems_container"> 
+		<div id = "numberSystem_logo">
+			<a href="numberSys.html"> NUMBER SYSTEM <br>&nbsp;&nbsp;&nbsp;CONVERSION </a>
+		</div>
+	</div>
+  
+	<div class = "numberSystem_content">
+		<h1 class = "h1"> INTRODUCTION </h1>
+		<p class = "p"> <b> Number System </b> these are the technique to represent numbers in the vcomputer system architecture and every data that you take and put in the memory of computer has equivalent number system </p>
+		<p class = "p"> There are four types of Number System:</p>
+		<ol class = "numberSystem_list"> 
+			<li> BINARY </li>
+			<li> OCTAL </li>
+			<li> DECIMAL </li>
+			<li> HEXADECIMAL </li>
+		</ol>
+		<p class = "p2"> Each bases of Number System write as a subscript of the Number System like the example below;
+		<ol class = "numberSystem_list"> 
+			<li> BINARY = BINARY<sub>02 </li>
+			<li> OCTAL = OCTAL<sub>08 </li>
+			<li> DECIMAL = OCTAL<sub>10 </li>
+			<li> HEXADECIMAL = OCTAL<sub>16 </li>
+		</ol>  
+		<div class = "sub_topic">
+			<p> Each of Number System has equivalent bases </p>
+			<pre>&nbsp;&nbsp;&nbsp; Binary is equivaleng to Base-6</pre>
+			<pre>&nbsp;&nbsp;&nbsp; Octal is equivaleng to Base-8</pre>
+			<pre>&nbsp;&nbsp;&nbsp; Decimal is equivaleng to Base-10</pre>
+			<pre>&nbsp;&nbsp;&nbsp; Hexadecimal is equivaleng to Base-16</pre>
+		</div>
+		<p class = "p3"> Each Number System has it own value and you can convert it to each other. This is the function of this website. <br> Look at the demo below;</br></p>
+		<ul class = "demo_container">
+			<div class = "step1">
+				<li class = "steps"> STEP 1: the left side drop down box will be the number system you want to convert.  </li> 
+				<li > <img src="step1.jpg" width="400px" height="80px"> </li>
+			</div>
+			<div class = "step2">
+				<li class = "steps"> STEP 2: the right side drop down box will be the number system you want your value to be converted.</li> 
+				<li> <img src="step2.jpg" width="400px" height="80px"> </li>
+			</div>
+			<div class = "step3">
+				<li class = "steps"> STEP 3: type the value that you want to be converted. if binary only accepts 0 and 1 value, if octal only accept from 0-7 value, if decimal only accept 0-9 and if hexadecimal it only accept 0-9 value and A,B,C,D,E,F hex value.  </li> 
+				<li> <img src="step3.jpg" width="400px" height="150px"class="img"> </li>
+			</div>
+			<div class = "step4">
+				<li class = "steps"> STEP 4: clink the convert button and wait for the result.</li> 
+				<li> <img src="step4.jpg" width="400px" height="80px"> </li>
+			</div>
+		</ul>
+   
+		<div class = "container">
+			<div class = "con1">
+				<select id = "convertionItem" class = "convertionItem" NAME = "binarySystem_list">
+					<option>Binary</option>
+					<option>Octal</option>
+					<option>Decimal</option>
+					<option>Hexadecimal</option>
+				</select>
+				<label> ----o </label>
+				<select id = "convertionItem2" class = "convertionItem" NAME = "binarySystem_list">
+					<option>Binary</option>
+					<option>Octal</option>
+					<option>Decimal</option>
+					<option>Hexadecimal</option>
+				</select>
+			</div>		
+			<div class = "con2">
+				<label> VALUE: </label>
+				<input id="myText"></input>
+				<button onclick="numberSys()"> CONVERT </button>
+			</div>
+			<div class="con3">
+				<label> RESULT: </label>
+				<input id="myText2"></input>
+			</div>
+		</div>
+	</div> 
+  <div class = "last_content">
+  </div>
+  <script src="./numberSys.js"></script>
+</body>
+</html>
